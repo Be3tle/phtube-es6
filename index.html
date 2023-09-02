@@ -5,27 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PH Tube</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
 
     <header>
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-                <label tabindex="0">
-                    <img src="./img/Logo.png" alt="">
-                </label>
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <label tabindex="0">
+                        <img src="./img/Logo.png" alt="">
+                    </label>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <button class="btn btn-active btn-ghost">Sort by View</button>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn btn-error text-white">Blog</button>
+                </div>
             </div>
-            <div class="navbar-center hidden lg:flex">
-                <button class="btn btn-active btn-ghost">Sort by View</button>
-            </div>
-            <div class="navbar-end">
-                <button class="btn btn-error text-white">Blog</button>
+        </nav>
+        <div class="tab-container w-full">
+            <div class="tabs flex p-5 text-center justify-center gap-5" id="tab-container">
+                <!-- <a class="tab tabs-boxed tab-active">All</a>
+                <a class="tab tabs-boxed">Music</a>
+                <a class="tab tabs-boxed">Comedy</a>
+                <a class="tab tabs-boxed">Drawing</a> -->
             </div>
         </div>
-
 
     </header>
 
