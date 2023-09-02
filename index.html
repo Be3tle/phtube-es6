@@ -8,6 +8,22 @@
     <!-- tailwind cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lato:wght@400;700;900&family=Work+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            font-family: 'Lato', sans-serif;
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,25 +37,34 @@
                     </label>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                    <button class="btn btn-active btn-ghost">Sort by View</button>
+                    <button onclick="handleSort()" class="btn btn-active btn-ghost">Sort by View</button>
                 </div>
                 <div class="navbar-end">
-                    <button class="btn btn-error text-white">Blog</button>
+                    <button id="btn-blog" class="btn btn-error text-white">Blog</button>
                 </div>
             </div>
         </nav>
         <div class="tab-container w-full">
             <div class="tabs flex p-5 text-center justify-center gap-5" id="tab-container">
-                <!-- <a class="tab tabs-boxed tab-active">All</a>
-                <a class="tab tabs-boxed">Music</a>
-                <a class="tab tabs-boxed">Comedy</a>
-                <a class="tab tabs-boxed">Drawing</a> -->
             </div>
         </div>
 
     </header>
 
-    <main></main>
+    <main>
+
+        <div class="flex flex-col md:flex-row justify-center gap-2 md:gap-8 mx-auto my-8">
+            <div id="tab-container">
+
+            </div>
+        </div>
+
+        <div class="w-11/12 mx-auto">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6" id="card-container">
+            </div>
+        </div>
+
+    </main>
 
     <script src="index.js"></script>
 

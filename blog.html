@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PH Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Understanding JavaScript Variables and REST API</h1>
+        <p>JavaScript is a versatile programming language used for web development. It provides different ways to
+            declare variables and interacts with web services through REST APIs. In this blog post, we will explore the
+            scope of <code>var</code>, <code>let</code>, and <code>const</code>, the use cases of <code>null</code> and
+            <code>undefined</code>, and what REST API means.
+        </p>
+
+        <h2>Scope of var, let, and const</h2>
+        <p>The scope of a variable in JavaScript refers to where in your code that variable can be accessed. In
+            JavaScript, there are three main ways to declare variables: <code>var</code>, <code>let</code>, and
+            <code>const</code>.
+        </p>
+        <ul>
+            <li><strong>var:</strong> Variables declared with <code>var</code> are function-scoped, meaning they are
+                only accessible within the function in which they are declared.</li>
+            <li><strong>let:</strong> Variables declared with <code>let</code> are block-scoped, making them accessible
+                only within the block in which they are defined, such as loops or conditional statements.</li>
+            <li><strong>const:</strong> Variables declared with <code>const</code> are also block-scoped and have a
+                constant value, which means they cannot be reassigned once defined.</li>
+        </ul>
+
+        <h2>Use Cases of null and undefined</h2>
+        <p><code>null</code> and <code>undefined</code> are two special values in JavaScript.</p>
+        <ul>
+            <li><strong>null:</strong> It is a deliberate absence of any object value. You can assign <code>null</code>
+                to a variable to explicitly indicate that it has no value or is empty.</li>
+            <li><strong>undefined:</strong> It indicates that a variable has been declared but has not been assigned any
+                value. It is the default value of uninitialized variables.</li>
+        </ul>
+
+        <h2>What is REST API?</h2>
+        <p>REST, or Representational State Transfer, is an architectural style for designing networked applications. A
+            <strong>REST API</strong> is a set of rules and conventions for building and interacting with web services
+            over HTTP.
+        </p>
+        <p>REST APIs use standard HTTP methods like GET, POST, PUT, DELETE, etc., to perform operations on resources,
+            which are represented as URLs. They typically return data in formats like JSON or XML.</p>
+        <p>REST APIs are widely used in web development to enable communication between client-side applications (like
+            web browsers) and server-side services, allowing data retrieval, modification, and other actions.</p>
+
+        <p>Understanding JavaScript variables and REST APIs is crucial for web developers to build dynamic and
+            interactive web applications. With the right knowledge, you can leverage the scope of variables and harness
+            the power of REST APIs to create feature-rich web experiences.</p>
+    </div>
+</body>
+
+</html>
